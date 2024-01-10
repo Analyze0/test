@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,1000&family=League+Spartan:wght@500&display=swap');
+
+body {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  background: #3081D0;
+  color:white;
+  overflow: hidden;
+}
+
+* {
+  overflow: hidden;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.signin {
+  font-weight: 1000;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 100px;
+  background: #393646;
+  color: #F4EEE0;
+  width: 100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.signup p {
+  margin: 20px;
+}
+
+.username {
+  position: fixed;
+  bottom: 200px;
+  left: 0px;
+  height: 100px;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pfp {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 330px;
+  left: calc(50% - 50px);
+  border-radius: 50%;
+}
+
+input {
+  border-radius: 6px;
+  width: 80%;
+  transform: translateX(10%);
+  color: white;
+  background: none;
+  border: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom: 1px solid white;
+}
+
+input:focus {
+  outline: none;
+}
+
+form {
+  position:fixed;
+  left: calc(50% - 40%);
+  width: 80%;
+  height: 300px;
+  position: fixed;
+  top: calc(50% - 150px);
+}
+
+label {
+  margin-left: 30px;
+}
+
+a {
+  text-align: center;
+  position: fixed;
+  left: calc(50% - 200px);
+  width: 400px;
+  height: 30px;
+  position: fixed;
+  top: 47%;
+  color: white;
+}
+
+#submit {
+  border: none;
+  font-weight: 1000;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 100px;
+  background: #393646;
+  color: #F4EEE0;
+  width: 100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+#notif {
+  position: fixed;
+  background: #393646;
+  color: white;
+  top: 15px;
+  left: 35px;
+  width: calc(100% - 100px);
+  height: auto;
+  text-align: center;
+  opacity: 0%;
+  transition: .5s ease-in-out;
+  padding:15px;
+  border-radius: 12px;
+}
+
+#back {
+  position: fixed;
+  background: #393646;
+  color: white;
+  top: 15px;
+  left: 35px;
+  width: 25;
+  height: 25;
+  text-align: center;
+  padding:11px;
+  border-radius: 12px;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+button, a {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+  #back {
+    color: black;
+    background: #F4EEE0;
+  }
+
+  #notif {
+    color: black;
+    background: #F4EEE0;
+  }
+
+  #submit {
+    color: black;
+    background: #F4EEE0;
+  }
+}

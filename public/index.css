@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;1,9..40,1000&family=League+Spartan:wght@500&display=swap');
+
+body {
+  user-select: none;
+  width: 100%;
+  height: 100%;
+  background: #3081D0;
+  color:white;
+  overflow: hidden;
+}
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.signin {
+  font-weight: 1000;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 100px;
+  background: #393646;
+  color: #F4EEE0;
+  width: 100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.signin p {
+  margin: 20px;
+}
+
+.signup {
+  font-weight: bold;
+  position: fixed;
+  bottom: 100px;
+  left: 0px;
+  height: 100px;
+  background: #4F4557;
+  color: #F4EEE0;
+  width: 100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.signout {
+  font-weight: bold;
+  position: fixed;
+  bottom: 100px;
+  left: 0px;
+  height: 100px;
+  background: #4F4557;
+  color: #F4EEE0;
+  width: 100%;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 40px;
+  text-align: center;
+}
+
+.signout p {
+  margin: 20px;
+}
+
+.signup p {
+  margin: 20px;
+}
+
+.username {
+  position: fixed;
+  bottom: 200px;
+  left: 0px;
+  height: 100px;
+  color: white;
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+}
+
+.pfp {
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  bottom: 330px;
+  left: calc(50% - 50px);
+  border-radius: 50%;
+  background: url(files/images/pfp.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+  .signout {
+    color: black;
+    background: #F4EEE0;
+  }
+
+  .signup {
+    color: black;
+    background: #F4EEE0;
+  }
+
+  .signin {
+    color: black;
+    background: #dedede;
+  }
+}
