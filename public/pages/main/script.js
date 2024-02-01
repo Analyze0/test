@@ -1,12 +1,6 @@
 var loggedIn = false;
 var username = localStorage.getItem("qmail");
 
-if (username != null) {
-  loggedIn = true;
-} else {
-  window.location.href = "/index.html";
-}
-
 if (loggedIn) {
   fetch("/accounts")
     .then((response) => response.json())
