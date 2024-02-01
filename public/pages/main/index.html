@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" href="/files/images/qmail-logo.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>If shes got that gyat yk where im at</title>
+  <title>Qmail</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -15,11 +19,31 @@
     </span>
     <input type="text" id="search" class="search">
   </div>
+  <div class="inbox-header">
+    <h1>Inbox</h1>
+  </div>
+  <button class="newQmail" id="newQmail">
+    <span class="material-symbols-rounded">
+    edit
+    </span>
+    <p>New Qmail</p>
+  </button>
+  <div class="newQmailForm" id="newQmailForm">
+    <div class="newQmailFormTop"><p>New Qmail</p></div>
+    <div class="form">
+      <input type="text" id="recipientInput" placeholder="Recipient">
+    </div>
+    <textarea name="" id="qmailContent" class="qmailContent"></textarea>
+    <button class="close material-symbols-rounded" id="close">cancel</button>
+    <button class="submit" id="submit">Submit</button>
+  </div>
+  
+  <div class="profileOverlay"></div>
+  <div id="notif"></div>
+  <div class="inbox" id="inbox"></div>
   <div class="pfp" id="pfp"></div>
   <p id="username" class="username"></p>
-  <div class="signin" id="signin"><p><i>Log In</i></p></div>
-  <div class="signup" id="signup"><p><i>Sign Up</i></p></div>
-  <div class="signout" id="signout"><p><i>Remove Account</i></p></div>
+  <p id="qmail" class="qmail"></p>
   <script src="script.js"></script>
 </body>
 </html>
